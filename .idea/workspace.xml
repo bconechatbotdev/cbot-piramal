@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbb9dce3-d65d-44d7-b7d8-9d6ef5534ee7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,12 +20,12 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="122" column="54" lean-forward="true" selection-start-line="122" selection-start-column="54" selection-end-line="122" selection-end-column="54" />
+            <state relative-caret-position="282">
+              <caret line="73" column="9" lean-forward="false" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
               <folding>
-                <element signature="e#3300#3743#0" expanded="false" />
-                <element signature="e#6150#6215#0" expanded="false" />
-                <element signature="e#6271#6399#0" expanded="false" />
+                <element signature="e#3370#3813#0" expanded="false" />
+                <element signature="e#6220#6285#0" expanded="false" />
+                <element signature="e#6341#6469#0" expanded="false" />
                 <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
                 <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
                 <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -115,11 +114,11 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BconeBot(LUIS)" />
+              <option name="myItemId" value="cbot-Procurement" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BconeBot(LUIS)" />
+              <option name="myItemId" value="cbot-Procurement" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -275,12 +274,12 @@
       <workItem from="1495625350749" duration="14446000" />
       <workItem from="1496215096032" duration="9661000" />
       <workItem from="1496310620052" duration="3150000" />
-      <workItem from="1496991201423" duration="284000" />
+      <workItem from="1496991201423" duration="2678000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153516000" />
+    <option name="totallyTimeSpent" value="155910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -293,7 +292,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30882353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -329,9 +328,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -345,9 +344,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -361,9 +360,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -377,9 +376,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -393,9 +392,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -409,9 +408,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -425,32 +424,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
-            <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
-            <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
-            <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
-            <element signature="n#!!block;n#CreateCard#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -471,9 +447,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -494,9 +470,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -517,9 +493,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -540,9 +516,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -563,9 +539,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -586,9 +562,32 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
+            <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
+            <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
+            <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
+            <element signature="n#!!block;n#CreateCard#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -609,9 +608,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -625,9 +624,9 @@
         <state relative-caret-position="153">
           <caret line="9" column="50" lean-forward="false" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -648,9 +647,9 @@
         <state relative-caret-position="612">
           <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -671,9 +670,9 @@
         <state relative-caret-position="612">
           <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -694,9 +693,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -710,9 +709,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -726,9 +725,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -742,9 +741,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -765,9 +764,9 @@
         <state relative-caret-position="1836">
           <caret line="110" column="9" lean-forward="false" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -788,9 +787,9 @@
         <state relative-caret-position="935">
           <caret line="57" column="3" lean-forward="true" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />
@@ -823,13 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Final Stag/Bot/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -837,14 +829,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="122" column="54" lean-forward="true" selection-start-line="122" selection-start-column="54" selection-end-line="122" selection-end-column="54" />
+        <state relative-caret-position="282">
+          <caret line="73" column="9" lean-forward="false" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
           <folding>
-            <element signature="e#3300#3743#0" expanded="false" />
-            <element signature="e#6150#6215#0" expanded="false" />
-            <element signature="e#6271#6399#0" expanded="false" />
+            <element signature="e#3370#3813#0" expanded="false" />
+            <element signature="e#6220#6285#0" expanded="false" />
+            <element signature="e#6341#6469#0" expanded="false" />
             <element signature="n#!!block;n#CreateCPOCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateSupplierVisibilityCards#0" expanded="false" />
             <element signature="n#!!block;n#CreateManagerDashboardCards#0" expanded="false" />

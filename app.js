@@ -69,6 +69,7 @@ bot.dialog('/', [
     function (session,args, next) {
         result = args || {};
         if (result == undefined || result.response == undefined) {
+            session.send("msg Address : " + session.message.address);
             builder.Prompts.text(session, "Hi " + session.message.user.name + " How can i help you?");
         }
         else if (result.response == "NU") {
