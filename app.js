@@ -117,7 +117,7 @@ function RootMenu(session,results) {
             session.endDialog();
         }
         else if (results.response.toUpperCase().indexOf("YES") != -1) {
-            session.beginDialog('/');
+            session.beginDialog('/Analytics');
         } else {
             session.send("Not Trained...");
             session.beginDialog('/',{response :'NU'});
@@ -174,7 +174,7 @@ bot.dialog('/Analytics',[
 bot.dialog('/ConversationEnd',[
     function (session) {
         session.conversationData  = {};
-        builder.Prompts.text(session, 'I hope i have resolved your queries!\n\nIs there anything else i can help you with?');
+        builder.Prompts.text(session, 'Would you like to see another dashboard?');
     }
 ]);
 
