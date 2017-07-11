@@ -5,6 +5,8 @@
 var restify = require('restify');
 var builder = require('botbuilder');
 var dateFormat = require('dateformat');
+var o = require('odata');
+var poData = [];
 
 const {Wit, log} = require('node-wit');
 
@@ -32,12 +34,20 @@ server.post('/api/messages', connector.listen());
 //=========================================================
 
 var Enum = require('enum');
-var rootFlow = new Enum(['payment', 'issue', 'StartGreeting'],{ignoreCase:true});
+var rootFlow = new Enum(['payment', 'issue','Yes','No','Reset', 'StartGreeting'],{ignoreCase:true});
+const client = new Wit({accessToken: 'OMA6J3GMQV43OCFXKIA3QKP7BJQCFDBT'});
+
+var userAddress= {};
 
 /*
 var recognizer = new builder.LuisRecognizer('https://eastus2.api.cognitive.microsoft.com/luis/v2.0/apps/e52f3664-4bf6-4ca4-8c47-70a64301a866?subscription-key=8a9e130238094022b9fd0f71e02df48b&timezoneOffset=0&verbose=true&q=');
 bot.recognizer(recognizer);
 */
+
+// On Error
+bot.on('error', function(message) {
+    console.log('[error] called'+message);
+});
 
 bot.on('conversationUpdate', function (message) {
     console.log("Called Conversation updated");
@@ -64,12 +74,14 @@ Date.prototype.addDays = function(days) {
     return this;
 };
 
+
+
 // Root dialog for entry point in application
 bot.dialog('/', [
     function (session,args, next) {
         result = args || {};
         if (result == undefined || result.response == undefined) {
-            session.send("msg Address : " + JSON.stringify(session.message.address));
+            userAddress = session.message.address;
             builder.Prompts.text(session, "Hi " + session.message.user.name + " How can i help you?");
         }
         else if (result.response == "NU") {
@@ -93,35 +105,38 @@ bot.dialog('/', [
 ]);
 
 function RootMenu(session,results) {
-    const client = new Wit({accessToken: 'OMA6J3GMQV43OCFXKIA3QKP7BJQCFDBT'});
+    //const client = new Wit({accessToken: 'OMA6J3GMQV43OCFXKIA3QKP7BJQCFDBT'});
     client.message(results.response, {}).then((data) => {
 
         var intentData = data.entities.intent != undefined ? data.entities.intent[0] : {};
 
         /*if (rootFlow.payment.is(intentData.value)) {
-            if (data.entities.PaymentType != undefined) {
-                session.conversationData.paymentType = data.entities.PaymentType[0].value;
-            }
+         if (data.entities.PaymentType != undefined) {
+         session.conversationData.paymentType = data.entities.PaymentType[0].value;
+         }
 
-            if (data.entities.InvoiceNo != undefined) {
-                session.conversationData.invoiceNo = data.entities.InvoiceNo[0].value;
-            }
+         if (data.entities.InvoiceNo != undefined) {
+         session.conversationData.invoiceNo = data.entities.InvoiceNo[0].value;
+         }
 
-            session.beginDialog('/payment', results.response);
-        }*/
+         session.beginDialog('/payment', results.response);
+         }*/
 
         if (results.response.toUpperCase().indexOf("ANALYTICS") !== -1) {
             session.beginDialog('/Analytics');
         }
+        else if (results.response.toUpperCase().indexOf("PO") !== -1) {
+            session.beginDialog('/POFlow');
+        }
         else if (results.response.toUpperCase().indexOf("NO") != -1) {
-            session.send("Ok then "+session.message.user.name +", Goodbye :)");
+            session.send("Ok then " + session.message.user.name + ", Goodbye :)");
             session.endDialog();
         }
         else if (results.response.toUpperCase().indexOf("YES") != -1) {
             session.beginDialog('/Analytics');
         } else {
             session.send("Not Trained...");
-            session.beginDialog('/',{response :'NU'});
+            session.beginDialog('/', {response: 'NU'});
         }
     })
         .catch(console.error);
@@ -171,6 +186,108 @@ bot.dialog('/Analytics',[
         session.endDialogWithResult(results);
     }
 ])
+
+bot.dialog('/POFlow',[
+    function (session,args,next) {
+        if (!session.dialogData.isDetailShown) {
+            getPOList(function (poList) {
+                console.log(JSON.stringify(poList));
+
+                if (poList !== undefined) {
+                    builder.Prompts.choice(session, "Please select a PO", poList,
+                        {
+                            listStyle: builder.ListStyle.button,
+                            maxRetries: 2,
+                            retryPrompt: 'Please provide PoNumber'
+                        });
+                }
+            });
+        }
+        else {
+            next();
+        }
+    },
+    function (session,results,next) {
+        if (!session.dialogData.isDetailShown) {
+            getPODetails(results.response.entity, function (objDetails) {
+                session.dialogData.poDetails = objDetails;
+                session.send("Following are the details of your purchase order");
+                session.send("PO No : " + objDetails.PoNumber + "\n\nComp Code : " + objDetails.CompCode + "\n\nPo Unit: 3" + objDetails.PoUnit + "\n\nVendor : " + objDetails.Vendor + "\n\nQuantity   :  " + objDetails.Quantity);
+                session.dialogData.isDetailShown = true;
+                builder.Prompts.text(session, "Do you want to update this?");
+            });
+        }
+        else {
+            next();
+        }
+    },
+    function (session,results,next) {
+        if (!session.dialogData.qntyValidated) {
+            client.message(results.response, {}).then((data) => {
+                var intentData = data.entities.intent != undefined ? data.entities.intent[0] : {};
+                if (rootFlow.No.is(intentData.value)) {
+                    session.beginDialog('/ConversationEnd');
+                }
+                else {
+                    builder.Prompts.text(session, "How many more Quantity you want?");
+                }
+
+            })
+                .catch(console.error);
+        }
+        else {
+            next();
+        }
+    },
+    function (session,results) {
+        var newQnty = parseInt(results.response, 10);
+        if (session.dialogData.poDetails.Quantity >= newQnty) {
+            // validation failed
+            session.dialogData.qntyValidated = false;
+            session.replaceDialog('/POFlow');
+        }
+        else {
+            session.dialogData.qntyValidated = true;
+            //validation success
+        }
+    }
+]);
+
+// get details based on poNumber
+function getPODetails(poNumber,cb) {
+// user poData for further details
+    var objDetails = {};
+    for (var i = 0, len = poData.length; i < len|| i<=5; i++) {
+        if (poData[i].PoNumber === poNumber) {
+            objDetails = poData[i];
+            break;
+        }
+    }
+    cb(objDetails);
+}
+
+//call odata service and get list of po
+function getPOList(cb) {
+// set an endpoint
+    o().config({
+        endpoint: 'http://alinhana9.bcone.com:8002/sap/opu/odata/sap/ZINFA_PO_SRV/',
+        username: 'TRAIN128_A21',
+        password: 'bcone@123',
+        isAsync:true
+    });
+    o('POSet').get(function (data) {
+        //same result like the first example on this page
+        console.log('service response :->    ' + JSON.stringify(data));
+        var result = data.d.results;
+        poData = result;
+        var poList = [];
+
+         for (var i = 0, len = result.length; i < len && i<=5; i++) {
+             poList.push(result[i].PoNumber);
+         }
+        cb(poList);
+    });
+}
 
 bot.dialog('/ConversationEnd',[
     function (session) {
